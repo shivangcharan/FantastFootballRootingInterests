@@ -1,7 +1,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 
-const API_BASE = import.meta.env.VITE_API_BASE || "http://localhost:8000";
+const API_BASE = import.meta.env.VITE_API_BASE || "https://fantastfootballrootinginterests.onrender.com";
 const WEIGHTS = { high: 2, medium: 1, none: 0 };
 
 export default function RootingInterestsApp() {
