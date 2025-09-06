@@ -13,7 +13,9 @@ app.add_middleware(
     allow_methods=["*"]
     ,allow_headers=["*"]
 )
-
+@app.get("/")
+def healthcheck():
+    return {"status": "ok"}
 
 def get_user(user_identifier: str):
     r = requests.get(f"{BASE_URL}/user/{user_identifier}")
