@@ -13,7 +13,7 @@ app.add_middleware(
     allow_methods=["*"]
     ,allow_headers=["*"]
 )
-@app.get("/")
+@app.api_route("/", methods=["GET", "HEAD"])
 def healthcheck():
     return {"status": "ok"}
 
